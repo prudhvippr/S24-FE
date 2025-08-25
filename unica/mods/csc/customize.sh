@@ -43,7 +43,14 @@ while read -r FILE; do
         SET_CSC_FEATURE_CONFIG "CscFeature_Setting_SupportRealTimeNetworkSpeed" "TRUE"
         SET_CSC_FEATURE_CONFIG "CscFeature_Setting_EnableHwVersionDisplay" "TRUE"
         SET_CSC_FEATURE_CONFIG "CscFeature_Setting_SupportMenuSmartTutor" "FALSE"
+        SET_CSC_FEATURE_CONFIG "CscFeature_Camera_EnableCameraDuringCall" "TRUE"
+        SET_CSC_FEATURE_CONFIG "CscFeature_Launcher_PerformanceTunning" "TRUE"
         SET_CSC_FEATURE_CONFIG "CscFeature_Setting_ConfigLongPressType" 1
+        SET_CSC_FEATURE_CONFIG "CscFeature_Camera_DefaultQuality" "superfine"
+        SET_CSC_FEATURE_CONFIG "CscFeature_Setting_EnableRoamingMenu" "TRUE"
+        SET_CSC_FEATURE_CONFIG "CscFeature_Camera_CameraFlicker" "60hz"
+        SET_CSC_FEATURE_CONFIG "CscFeature_Camera_CamcorderDoNotPauseMusic" "TRUE"
+        SET_CSC_FEATURE_CONFIG "CscFeature_Common_EnhanceImageQuality" "TRUE"
         SET_CSC_FEATURE_CONFIG "CscFeature_Common_DisableBixby" --delete
         LOG_STEP_OUT
 
