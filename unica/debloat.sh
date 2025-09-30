@@ -1,4 +1,4 @@
-#
+
 # Copyright (C) 2023 Salvo Giangreco
 #
 # This program is free software: you can redistribute it and/or modify
@@ -170,6 +170,9 @@ system/priv-app/AppUpdateCenter
 system/priv-app/AutoDoodle
 system/priv-app/AvatarEmojiSticker
 system/priv-app/BeaconManager
+system/priv-app/Bixby
+system/priv-app/BixbyInterpreter
+system/priv-app/BixbyVisionFramework3.5
 system/priv-app/DynamicLockscreen
 system/priv-app/FBInstaller_NS
 system/priv-app/FBServices
@@ -184,6 +187,7 @@ system/priv-app/StoryService
 system/priv-app/StickerFaceARAvatar
 system/priv-app/SmartSwitchAssistant
 system/app/SmartManager_v6_DeviceSecurity
+system/priv-app/SettingsBixby
 system/priv-app/SamsungSmartSuggestions
 system/priv-app/SamsungPass
 system/priv-app/SamsungMagnifier3
@@ -208,6 +212,7 @@ system/app/ARCore
 system/app/ARDrawing
 system/app/AASAservice
 system/app/BasicDreams
+system/app/BixbyWakeup
 system/app/BlockchainBasicKit
 system/app/CompanionDeviceManager
 system/app/EasterEgg
@@ -278,7 +283,7 @@ if $SOURCE_IS_ESIM_SUPPORTED; then
     if ! $TARGET_IS_ESIM_SUPPORTED; then
         SYSTEM_DEBLOAT+="
         system/etc/permissions/privapp-permissions-com.samsung.android.app.esimkeystring.xml
-        system/etc/permissions/privapp-permissions-com.samsung.euicc.xml
+        system/etc/permissions/privapp-permissions-com.samsung.euicc.mep.xml
         system/etc/sysconfig/preinstalled-packages-com.samsung.android.app.esimkeystring.xml
         system/etc/sysconfig/preinstalled-packages-com.samsung.euicc.xml
         system/priv-app/EsimKeyString
@@ -287,3 +292,4 @@ if $SOURCE_IS_ESIM_SUPPORTED; then
         "
     fi
 fi
+
