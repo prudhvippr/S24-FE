@@ -1,5 +1,5 @@
 if [[ -d "$SRC_DIR/target/$TARGET_CODENAME/overlay" ]]; then
-    DECODE_APK "product" "overlay/framework-res__g0sxxx__auto_generated_rro_product.apk"
+    DECODE_APK "product" "overlay/framework-res__b0sxxx__auto_generated_rro_product.apk"
 
     LOG "- Applying stock overlay configs"
     rm -rf "$APKTOOL_DIR/product/overlay/framework-res__g0sxxx__auto_generated_rro_product.apk/res"
